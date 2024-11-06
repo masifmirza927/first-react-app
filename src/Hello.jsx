@@ -7,7 +7,7 @@ function Hello(props) {
     return(
         <div>
             <h1>Hello, {props.name} you form {props.city}</h1>
-            <Hi name={props.name} />
+            <Hi name={props.name} /> 
         </div>
     )
 }

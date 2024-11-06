@@ -7,7 +7,7 @@ function App() {
         <div>
             <h1>Hello I am Shakeel</h1>
             <p>Hello from para</p>
-            <Hello name="Shakeel" city="Karachi" />
+            <Hello name="Shakeel" city="Karachi" /> 
         </div>
     )
 }
