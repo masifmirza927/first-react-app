@@ -5,7 +5,7 @@ import Hello from "./Hello";
 function App() {
     return (
         <div>
-            <h1>Hello I am Shakeel</h1>
+            <h1 style={{color:"red", backgroundColor: "gold"}}>Hello I am developer</h1>
             <p>Hello from para</p>
             <Hello name="Shakeel" city="Karachi" /> 
         </div>
