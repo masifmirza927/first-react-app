@@ -1,7 +1,7 @@
 
 import Crab from "./images/img1.jpg";
 
-function Hello() {
+function Hello(props) {
     
 const name  = "Saif";
 const a = 5;
@@ -17,7 +17,7 @@ const isLogin = true;
             </h1>
             <img src={Crab} width="300px" />
             <label htmlFor="myName">My Name</label>
-            <input type="text" id="myName" />
+            <button onClick={ () => { props.getNameFunc("jameeel") } } >Call Func From Hello</button>
         </div>
     )
 }
