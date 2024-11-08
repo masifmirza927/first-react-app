@@ -15,8 +15,8 @@ const isLogin = true;
                     (isLogin == true) ? "Welcome Saif": "Welcome Guest"
                 }
             </h1>
-            <img src={Crab} width="300px" />
-            <label htmlFor="myName">My Name</label>
+            {/* <img src={Crab} width="300px" /> */}
+            <label htmlFor="myName">My Name {props.score}</label>
             <button onClick={ () => { props.getNameFunc("jameeel") } } >Call Func From Hello</button>
         </div>
     )
