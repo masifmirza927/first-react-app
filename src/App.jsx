@@ -1,30 +1,19 @@
-import "./App.css";
 
-import Hello from "./Hello";
-import {useState} from "react";
+import Child from "./Child"
 
 function App() {
-    const [score, setScore] = useState(0);
-    const getName = (name) => {
-        alert(`hi ${name} from app`);
-    }
+    const name = "saleem";
 
-    const increaseScore = () => {
-        setScore( score + 1 )
+    const getCity = (city) => {
+        console.log(`myCity: ${city}`);
     }
-    const decreaseScore = () => {
-        setScore( score - 1 )
-    }
-
-    return (
+    return ( 
         <div>
-            <h1 style={{color:"red", backgroundColor: "gold"}}>Score: {score}</h1>
-            <button onClick={ increaseScore }>Increment</button>
-            <button onClick={ decreaseScore }> Decrement</button>
-            {/* <button onClick={ () => { getName("Ali")  } } >Say Hi</button> */}
-            <Hello getNameFunc={getName}  score={score} city="Karachi" /> 
+            <h1>Hello {name}</h1>
+            {/* <div><button onClick={ () => { getCity("Karachi") }  } >Get City Btn</button></div> */}
+            <Child getCity={getCity} name={name} />
         </div>
     )
 }
 
-export default App;
+export default App
