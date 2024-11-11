@@ -1,17 +1,21 @@
-
 import Child from "./Child"
 
-function App() {
-    const name = "saleem";
+import {useState} from "react";
+import Scorecard from "./Scorecard";
 
-    const getCity = (city) => {
-        console.log(`myCity: ${city}`);
-    }
+function App() {
+    const [score, setScore] = useState(0);
+console.log("re run");
+
+
     return ( 
         <div>
-            <h1>Hello {name}</h1>
+           <h1>Score {score}</h1>
+            <button onClick={ () => { setScore(6) } } >Six</button>
+            
             {/* <div><button onClick={ () => { getCity("Karachi") }  } >Get City Btn</button></div> */}
-            <Child getCity={getCity} name={name} />
+            {/* <Child getCity={getCity} name={name} /> */}
+            <Scorecard score={score} />
         </div>
     )
 }
